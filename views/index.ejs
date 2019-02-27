@@ -23,6 +23,12 @@
     <meta name="og:description" content="The IBM Watson Language Translator service converts text input in one language into a destination language for the end user using background from domain-specific models. Translation is available among Arabic, Catalan, Chinese (Simplified and Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Hindi, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Russian, Spanish, Swedish and Turkish (some languages may not be available for all domains).">
     <link href="css/watson-bootstrap-style.css" rel="stylesheet">
     <link href="css/browser-compatibility.css" rel="stylesheet">
+    
+    <script type="text/javascript" charset="utf8" src="https://lpcdn.lpsnmedia.net/webagent/client-SDK.min.js"></script>
+    <script>
+        var SDK = lpTag.agentSDK;
+        SDK.init();
+    </script>
 </head>
 <body>
 <% if (!hideHeader) { %>
@@ -174,10 +180,5 @@
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="demo.js"></script>
         <script type="text/javascript" src="https://cdn.rawgit.com/watson-developer-cloud/watson-developer-cloud.github.io/master/analytics.js" />
-		<script type="text/javascript" charset="utf8" src="https://lpcdn.lpsnmedia.net/webagent/client-SDK.min.js"></script>
-        <script>
-            var SDK = lpTag.agentSDK;
-            SDK.init();
-        </script>
 </body>
 </html>
