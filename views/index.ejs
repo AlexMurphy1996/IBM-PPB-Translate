@@ -26,14 +26,8 @@
     
     <script type="text/javascript" charset="utf8" src="https://lpcdn.lpsnmedia.net/webagent/client-SDK.min.js"></script>
     <script>
-        var lpWidgetSDK = lpTag.LPWidgetSDK.init();
-        lpWidgetSDK.bind(lpTag.LPWidgetSDK.API.events.CONVERSATION_INFO, _onEvent, this);
-
-        function _onEvent(eventData) {
-          if (eventData) {
-            console.log(eventData);
-          }
-        }
+        var SDK = lpTag.agentSDK;
+		SDK.init();
     </script>
 </head>
 <body>
